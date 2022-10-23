@@ -61,7 +61,7 @@ body .card .btn:hover {
   color: white;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 720px) {
   body .card {
     width: 100%;
     height: 40vh;

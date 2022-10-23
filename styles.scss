@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+}
 
     $lobster:'Lobster', cursive;
     $Manrope: 'Manrope', sans-serif;
@@ -17,20 +20,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s 0.5s ease;
     .card {
         width: 500px;
         height: 300px;
-        background-color: rgba(128, 128, 128, 0.8);
+        background-color: rgba(168, 167, 167, 0.8);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 20px;
         border: none;
         text-align: center;
-        padding: 20px;
+        padding: 0.8rem;
         .hugot-quote {
-            height: 80%;
+            height: 30%;
             border: 1px solid black;
-            padding: 20% 1%;
+            padding: 20% 3%;
             font-family: $lobster;
+            font-size: 1.2rem;
+
+        }  
+        .btn {
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 0.4rem;
+            transition: all 0.2s 0.2s ease;
+        }
+        .btn:hover {
+            background: black;
+            color: white;
         }
         
     }

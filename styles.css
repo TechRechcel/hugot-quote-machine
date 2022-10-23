@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background: url("https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
@@ -20,24 +24,40 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
 }
 
 body .card {
   width: 500px;
   height: 300px;
-  background-color: rgba(128, 128, 128, 0.8);
+  background-color: rgba(168, 167, 167, 0.8);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   border: none;
   text-align: center;
-  padding: 20px;
+  padding: 0.8rem;
 }
 
 body .card .hugot-quote {
-  height: 80%;
+  height: 30%;
   border: 1px solid black;
-  padding: 20% 1%;
+  padding: 20% 3%;
   font-family: "Lobster", cursive;
+  font-size: 1.2rem;
+}
+
+body .card .btn {
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  -webkit-transition: all 0.2s 0.2s ease;
+  transition: all 0.2s 0.2s ease;
+}
+
+body .card .btn:hover {
+  background: black;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

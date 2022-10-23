@@ -14,10 +14,16 @@ let hugotQuotes = ["Bahalag gutom basta dili uhaw - silingan namo nagpalit ug ta
 "Hindi ko naman hinihiling na ako ang unahin mo. Ayoko lang maramdaman na parang wala lang ako sayo."];
 
 
-btn.addEventListener("click", () => {
-    console.log(Math.floor(Math.random(hugotQuotes[0]) * hugotQuotes.length));
-})
+//new hugot btn!
+    btn.addEventListener("click", () => {
+        let output = hugotQuotes[Math.floor(Math.random() * hugotQuotes.length)];
+        console.log(hugotQuotes[Math.floor(Math.random() * hugotQuotes.length)]);
+        hugotQuote.textContent = `"${output}"`;
+    })
 
-console.log(hugotQuotes.length);
+
+
+
+
 
 
